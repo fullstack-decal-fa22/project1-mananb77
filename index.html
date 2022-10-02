@@ -5,25 +5,24 @@
     <title>Manan Bhargava</title>
     <link rel="stylesheet" href="styles.css">
   </head>
+
+  <header class="header">
+    <div class="header-logo-container">
+      <img class="logo-icon" src="/images/mb-logo.png">
+    </div>
+
+    <div class="name-container">
+      <p>MANAN BHARGAVA</p>
+    </div>
+
+    <nav class="nav-container">
+      <button class="nav-button" target="_blank" href="https://www.youtube.com/watch?v=_MR1Dp8-F8w&ab_channel=TheOrganicChemistryTutor">Work</button>
+      <button class="nav-button" href="">About</button>
+      <button class="nav-button">Contact</button>
+    </nav>
+  </header>
   
   <body>
-    <header class="header">
-      <div class="logo-container">
-        <img class="logo-icon" src="/images/mb-logo.png">
-      </div>
-
-      <div class="name-container">
-        <p>MANAN BHARGAVA</p>
-      </div>
-
-      <nav class="nav-container">
-        <!-- create buttons -->
-        <button class="nav-button">Work</button>
-        <button class="nav-button">About</button>
-        <button class="nav-button">Contact</button>
-      </nav>
-    </header>
-
     <div class="hello-section block">
       <div class="left-hello-section">
         <h1 class="hello-title">Hi, I'm
@@ -33,9 +32,15 @@
            <br> @ UC Berkeley</h3>
         <br>
         <div class="social-grid">
-          <img class="social-icon" src="images/github-icon.png">
-          <img class="social-icon" src="images/linkedin-icon.png">
-          <img class="social-icon" src="images/instagram-icon.png">
+          <a class="social-icon" href="https://github.com/mananb77" target="_blank">
+            <img class="social-icon" src="images/github-icon.png">
+          </a>
+          <a class="social-icon" href="https://www.linkedin.com/in/manan-bhargava/" target="_blank">
+            <img class="social-icon" src="images/linkedin-icon.png">
+          </a>
+          <a class="social-icon" href="https://www.instagram.com/manan.b.photography/?hl=en" target="_blank">
+            <img class="social-icon" src="images/instagram-icon.png">
+          </a>
         </div>
       </div>
       <div class="right-hello-section">
@@ -45,11 +50,11 @@
 
     <div class="work-section block">
       <h2 class="section-title">My Work</h2>
-      <div class="grid-container">
+      <div class="grid-container" id="threevert">
         <div class="grid-item">
           <img class="project-icon" src="/images/git-icon.png">
           <br>
-          <h3 class="project-title">Gitlet</h3>
+          <h3 class="category-title">Gitlet</h3>
           <a class="project-subtitle" target="_blank" href="https://www.freecodecamp.org/news/what-is-git-learn-git-version-control/">
             Lite version of <br> git version control
           </a>
@@ -66,7 +71,7 @@
         <div class="grid-item">
           <img class="project-icon" src="/images/enigma-icon.png">
           <br>
-          <h3 class="project-title">Enigma</h3>
+          <h3 class="category-title">Enigma</h3>
           <a class="project-subtitle" target="_blank" href=https://www.youtube.com/watch?v=G2_Q9FoD-oQ&ab_channel=Numberphile">
             WW2 encoding <br> & decoding machine
           </a>
@@ -82,7 +87,7 @@
         <div class="grid-item">
           <img class="project-icon" src="/images/snake-icon.png">
           <br>
-          <h3 class="project-title">Snake Game</h3>
+          <h3 class="category-title">Snake Game</h3>
           <a class="project-subtitle" target="_blank" href="https://www.xarg.org/project/html5-snake/">
             Addictive 2D text interface for growing snakes
           </a>
@@ -98,7 +103,7 @@
         <div class="grid-item">
           <img class="project-icon" src="/images/personal-icon.png">
           <br>
-          <h3 class="project-title">Personal Site</h3>
+          <h3 class="category-title">Personal Site</h3>
           <a class="project-subtitle" target="_blank" href="https://mananbhargava.com/">
             Another one.<br> For the Books.
           </a>
@@ -114,8 +119,8 @@
         <div class="grid-item">
           <img class="project-icon" src="/images/youtube-icon.png">
           <br>
-          <h3 class="project-title">YouTube</h3>
-          <a class="project-subtitle" target="_blank" href="https://mananbhargava.com/">
+          <h3 class="category-title">YouTube</h3>
+          <a class="project-subtitle" target="_blank" href="https://mananb77.github.io/youtube-mockup/">
             YouTube but hardcoded. <br> From scratch.
           </a>
           <br>
@@ -130,8 +135,8 @@
         <div class="grid-item">
           <img class="project-icon" src="/images/figma-icon.png">
           <br>
-          <h3 class="project-title">Foodware</h3>
-          <a class="project-subtitle" target="_blank" href="https://mananb77.github.io/youtube-mockup/">
+          <h3 class="category-title">Foodware</h3>
+          <a class="project-subtitle" target="_blank" href="https://www.foodwaretogo.com/">
             Designed mobile app and web dashboard
           </a>
           <br>
@@ -149,33 +154,100 @@
 
     <div class="about-section block">
       <h2 class="section-title">About</h2>
-      <!-- 3 vertical columns -->
-      <h5>Hobbies</h5>
-      <h5>Sports</h5>
-      <h5>Community Service</h5>
+      <div class="grid-container" id="twovert">
+        <div class="grid-item">
+          <h5 class="about-title">Hobbies</h5>
+          <p id="yellow">Photography</p>
+          <p id="yellow">Burn Pen Art</p>
+          <p id="yellow">Hiking</p>
+          <p id="yellow">Calligraphy</p>
+          <p id="yellow">Travelling</p>
+          <p id="yellow">Baking</p>
+        </div>
+        <div class="grid-item">
+          <img class="about-img" src="/images/hobbies.png">
+        </div>
+        
+        <div class="grid-item">
+          <img class="sports-img" src="/images/sports.png">
+        </div>
+        <div class="grid-item">
+          <h5 class="about-title">Sports</h5>
+          <p id="yellow">Swimming</p>
+          <p id="yellow">Badminton</p>
+          <p id="yellow">Table Tennis</p>
+        </div>
+
+        <div class="grid-item">
+          <h5 class="about-title">Interesting Facts</h5>
+          <ul class="list" id="yellow">
+            <li>I'm an Eagle Scout</li>
+            <li>Was a Robotics Nerd</li>
+            <li>I like trains</li>
+            <li>I lovvvve mangoes</li>
+            <li>Fav color is Deep Sky Blue</li>
+            <li>Eternal Fanboy of Apple, <br>live 5 mins away from headquarters</li>
+            <li>Music: Pentatonix, Maroon 5</li>
+            <li>Obsess over Home Renovation, <br> Cooking shows</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <img class="facts-img" src="/images/facts.png">
+        </div>
+      </div>
     </div>
 
-    <div class="contact-section">
-      <!-- copy paste buttons for contact info here -->
-      <button>Contact Me</button>
-      <form>
-        <label>Name:</label>
-        <input type="text" id="name">
-        <br>
-        <br>
-        <label>Email:</label>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label>Message:</label>
-        <input type="text" id="message">
-        <br>
-        <br>
-        <input type="submit">
-
-        <!-- javascript function for modal popup for submission confirmation -->
-      </form>
+    <div class="contact-section block">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="grid-container" id="threevert">
+        <div class="grid-item" id="background-gray"></div>
+        <div class="grid-item" id="contact-form-section">
+          <form class="contact-form">
+            <label class="form-label">Name:</label>
+            <br>
+            <input type="text" id="name" class="form-input">
+            <br>
+            <br>
+            <label class="form-label">Email:</label>
+            <br>
+            <input class="form-input" type="email" id="email">
+            <br>
+            <br>
+            <label class="form-label">Message:</label>
+            <br>
+            <input class="form-input" type="text" id="message">
+            <br>
+            <br>
+            <input class="nav-button" type="submit" onclick="confirmation()">
+            <p id="popup"></p>
+            <script>
+              function confirmation() {
+                let txt = "";
+                if (confirm("Are you sure you want to submit?")) {
+                  txt = "You pressed YESS!";
+                } else {
+                  txt = "You pressed CANCEL :'((";
+                }
+                document.getElementById("popup").innerHTML = txt;
+              }
+            </script>
+          </form>
+        </div>
+        <div class="grid-item" id="background-gray"></div>
+      </div>
     </div>
-
   </body>
+
+  <footer class="footer">
+    <div class="footer-logo-container">
+      <img class="logo-icon" src="/images/mb-logo.png">
+    </div>
+    <br>
+    <div>
+      <h4 id="white">© Manan Bhargava 2022</h4>
+    </div>
+    <br>
+    <br>
+  </footer>
+
 </html>
